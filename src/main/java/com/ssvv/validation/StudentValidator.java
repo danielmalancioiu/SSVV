@@ -37,12 +37,10 @@ public class StudentValidator implements Validator<Student> {
     }
 
     private boolean isValidEmail(String email) {
-        // Simple email format validation, you can implement a more comprehensive validation if needed
         return email.matches("^[\\w.-]+@[\\w.-]+\\.[a-zA-Z]{2,}$");
     }
 
     private boolean isValidName(String name) {
-        // Name should start with a capital letter and contain no symbols
         return name.matches("^[A-Z][a-zA-Z ]*$") && !name.contains("-");
     }
 }
