@@ -2,16 +2,19 @@ package com.ssvv.validation;
 
 import com.ssvv.domain.Tema;
 
+import java.util.Objects;
+
 public class TemaValidator implements Validator<Tema> {
 
-    /**
-     * Valideaza o tema
-     * @param entity - tema pe care o valideaza
-     * @throws ValidationException daca tema nu e valida
-     */
+
+
     @Override
     public void validate(Tema entity) throws ValidationException {
-        if(entity.getID().equals("") || entity.getID() == null) {
+        if(Objects.nonNull(entity.getID())) {
+            if(entity.getID().equals("")) {
+                throw new ValidationException("Numar tema invalid!");
+            }
+        } else {
             throw new ValidationException("Numar tema invalid!");
         }
         if(entity.getDescriere().equals("")){
