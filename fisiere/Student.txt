@@ -1,0 +1,18 @@
+
+Tema: t1
+Nota: 7.5
+Predata in saptamana: 7
+Deadline: 6
+Feedback: bine
+
+Tema: t2
+Nota: 7.5
+Predata in saptamana: 7
+Deadline: 6
+Feedback: bine
+
+Tema: t1
+Nota: 7.5
+Predata in saptamana: 7
+Deadline: 6
+Feedback: bine
