@@ -88,19 +88,19 @@ public class IntegrationTest {
 
 
 	@Test
-	public void testAddStudent() {
+	public void integrationTestAddStudent() {
 		Student student = new Student("s1", "Student", 931, "s1@gmail.com");
 		assertNull(service.addStudent(student));
 	}
 
 	@Test
-	public void testAddTema() {
+	public void integrationTestAddTema() {
 		Tema tema = new Tema("t1", "Tema", 6, 6);
 		assertNull(service.addTema(tema));
 	}
 
 	@Test
-	public void testAddGrade() {
+	public void integrationTestAddGrade() {
 
 		Nota nota = new Nota("g1", "s1", "t1", 10, LocalDate.now());
 		assertEquals(service.addNota(nota, "bine"), 7.5);
@@ -111,7 +111,7 @@ public class IntegrationTest {
 	}
 
 	@Test
-	public void testAddStudentTemaGrade() {
+	public void integrationTestAddStudentTemaGrade() {
 
 		Student student = new Student("s2", "Student", 931, "s2@gmail.com");
 		Tema tema = new Tema("t2", "Tema", 6, 6);
