@@ -95,13 +95,17 @@ public class IntegrationTest {
 
 	@Test
 	public void integrationTestAddTema() {
-		Tema tema = new Tema("t1", "Tema", 6, 6);
+		Tema tema = new Tema("1", "Tema", 6, 6);
 		assertNull(service.addTema(tema));
 	}
 
 	@Test
 	public void integrationTestAddGrade() {
 
+		Student student = new Student("s1", "Student", 931, "s2@gmail.com");
+		Tema tema = new Tema("t1", "Tema", 6, 6);
+service.addStudent(student);
+	service.addTema(tema);
 		Nota nota = new Nota("g1", "s1", "t1", 10, LocalDate.now());
 		assertEquals(service.addNota(nota, "bine"), 7.5);
 
