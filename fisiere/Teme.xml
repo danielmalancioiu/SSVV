@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<inbox>
+    <nrTema nrTema="1">
+        <descriere>tema1</descriere>
+        <deadline>5</deadline>
+        <primire>5</primire>
+    </nrTema>
+    <nrTema nrTema="2">
+        <descriere>tema2</descriere>
+        <deadline>6</deadline>
+        <primire>5</primire>
+    </nrTema>
+    <nrTema nrTema="3">
+        <descriere>tema3</descriere>
+        <deadline>5</deadline>
+        <primire>7</primire>
+    </nrTema>
+</inbox>

@@ -53,7 +53,7 @@ public class THIntegrationTest {
 
 		System.out.println("Test student - add");
 
-		Student s1 = new Student("", "ana", 931, "ana@gmail.com");
+		Student s1 = new Student("", "test", 934, "test@gmail.com");
 
 		try{
 			doThrow(new ValidationException("Nume incorect!")).when(studentValidator).validate(s1);
@@ -77,7 +77,7 @@ public class THIntegrationTest {
 
 		System.out.println("Test student and tema - add");
 
-		Student s1 = new Student("222", "ana", 931, "ana@gmail.com");
+		Student s1 = new Student("222", "test", 934, "test@gmail.com");
 		Tema tema1 = new Tema("223", "", 1, 1);
 
 		try{
@@ -105,7 +105,7 @@ public class THIntegrationTest {
 
 		System.out.println("Test student and tema and nota - add");
 
-		Student s1 = new Student("222", "ana", 931, "ana@gmail.com");
+		Student s1 = new Student("222", "test", 934, "test@gmail.com");
 		Tema tema1 = new Tema("222", "a", 1, 2);
 		Nota nota1 = new Nota("222", "222", "222", 10, LocalDate.now());
 
@@ -131,7 +131,6 @@ public class THIntegrationTest {
 			Assertions.assertNull(tema1_test);
 
 			Assertions.assertThrows(ValidationException.class, () -> service.addNota(nota1, "ok"));
-//			double nota1_test = service.addNota(nota1, "ok");
 			Assertions.assertEquals(10.0, nota1.getNota());
 
 
