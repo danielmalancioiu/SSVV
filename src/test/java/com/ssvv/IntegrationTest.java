@@ -103,7 +103,7 @@ public class IntegrationTest {
 	public void integrationTestAddGrade() {
 
 		Student student = new Student("s1", "Student", 931, "s2@gmail.com");
-		Tema tema = new Tema("t1", "Tema", 6, 6);
+		Tema tema = new Tema("t1", "Tema", 8, 8);
 service.addStudent(student);
 	service.addTema(tema);
 		Nota nota = new Nota("g1", "s1", "t1", 10, LocalDate.now());
@@ -118,7 +118,7 @@ service.addStudent(student);
 	public void integrationTestAddStudentTemaGrade() {
 
 		Student student = new Student("s2", "Student", 931, "s2@gmail.com");
-		Tema tema = new Tema("t2", "Tema", 6, 6);
+		Tema tema = new Tema("t2", "Tema", 8, 8);
 		Nota nota = new Nota("g2", "s2", "t2", 10, LocalDate.now());
 
 		assertNull(service.addStudent(student));
